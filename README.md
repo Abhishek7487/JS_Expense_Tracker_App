@@ -17,7 +17,7 @@
 
 ## 🪧 Demo
 
-![Palindrome Checker](https://www.linkpicture.com/q/Screenshot-2022-11-03-093729.png)
+![Expense Tracker](https://www.linkpicture.com/q/Expe.png)
 
 
 
@@ -28,4 +28,4 @@
 - ✅ JS
 
 
-## 💯 Honest time taken - ⏲️ 32mins
+## 💯 Honest time taken - ⏲️ 2hrs
