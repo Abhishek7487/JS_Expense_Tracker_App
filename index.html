@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker | Abhishek Patil</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerHead">
+        <h1 class="welcomeMessage hidden">
+          Welcome back, <span class="welcomeMessageUsername">Username</span>
+        </h1>
+        <div class="logo">
+          <img src="./img/Icon.png" alt="Logo" class="icon" />
+        </div>
+        <p class="logoutBtn hidden">Logout &rarr;</p>
+      </div>
+      <div class="containerBody">
+        <!-- Login Container -->
+        <div class="loginContainer">
+          <h1 class="containerHeading">Log In</h1>
+          <input type="text" class="loginUsername" placeholder="Username" />
+          <input type="password" class="loginPassword" placeholder="Password" />
+          <p class="loginMessage"></p>
+          <button class="btn btnLogin">Login</button>
+          <button class="btn btnSignup">SignUp</button>
+        </div>
+
+        <!-- SignUp Container -->
+        <div class="signupContainer hidden">
+          <h1 class="containerHeading">Sign Up</h1>
+          <input type="text" class="signupUsername" placeholder="Username" />
+          <input
+            type="password"
+            class="signupPassword"
+            placeholder="Password"
+          />
+          <p class="signupMessage"></p>
+          <button class="btn btnCreate">SignUp</button>
+        </div>
+
+        <!-- Dashboard Container -->
+        <div class="dashboardContainer hidden">
+          <div class="statusBar">
+            <div class="statusBarHeading">
+              <img
+                class="statusBarImg"
+                src="./img/expenses.png"
+                alt="expenses"
+              />
+              <p class="statusBarText">Your Expenses</p>
+            </div>
+            <div class="statusBarAmount">
+              <span class="statusBarTotalAmount"></span><sup>₹</sup>
+            </div>
+          </div>
+          <div class="mainDashboard">
+            <div class="expensesTable"></div>
+            <div class="addExpenseContainer">
+              <h2 class="addExpenseHeading">Add Expense</h2>
+              <input
+                class="addExpenseDescription"
+                type="text"
+                placeholder="Description"
+              />
+              <input
+                class="addExpenseAmount"
+                type="number"
+                placeholder="Amount"
+              />
+              <p class="addExpenseMessage"></p>
+              <button class="addExpenseBtn">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
